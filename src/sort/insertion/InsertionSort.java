@@ -3,6 +3,7 @@
  * Bill Nicholson                                          *
  * nicholdw@ucmail.uc.edu                                  *
  * p-code https://en.wikipedia.org/wiki/Insertion_sort     *
+ * Life is good
  * *********************************************************/
 
 package sort.insertion;
