@@ -2,6 +2,7 @@
  * Insertion Sort Test main()                              *
  * Bill Nicholson                                          *
  * nicholdw@ucmail.uc.edu                                  *
+ * We use this as a GitHub example in IT2045C              *
  * *********************************************************/
 package sort.insertion;
 
