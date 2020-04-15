@@ -11,7 +11,7 @@ package sort.insertion;
 
 public class InsertionSort {
 
-
+	// Looks just like the one on wikipedia XD
 	public static void Sort(int[] data) {
 		for (int i = 1; i < data.length; i++) {
 			int j;
