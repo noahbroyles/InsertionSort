@@ -111,7 +111,7 @@ class UnitTests {
 		InsertionSort.Sort(backwards);
 		long backwardsTime = System.nanoTime() - start;
 		
-		assert(backwardsTime > sortedTime);x`x
+		assert(backwardsTime > sortedTime);
 	}
 
 }
