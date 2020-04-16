@@ -43,7 +43,6 @@ class UnitTests {
 	 */
 	void test02() {
 		
-		
 		int test2Length = 100000;
 		int[] testData = new int[test2Length];
 		int j = 0;
@@ -87,27 +86,6 @@ class UnitTests {
 	 * Test if sorting an already sorted array takes less time than sorting a backwards one
 	 */
 	void test04() {
-		
-		int[] sorted = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-		int[] backwards = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-		
-		long start = System.nanoTime();
-		InsertionSort.Sort(sorted);
-		long sortedTime = System.nanoTime() - start;
-		
-		start = System.nanoTime();
-		InsertionSort.Sort(backwards);
-		long backwardsTime = System.nanoTime() - start;
-		
-		System.out.println(backwardsTime);
-		System.out.println(sortedTime);
-		
-		assert(backwardsTime > sortedTime);
-		// Mercy me! This test fails! This is wrong!
-	}
-	
-	@Test
-	void test05() {
 		int[] sorted = new int[1000];
 		int[] backwards = new int[1000];
 		for (int i = 0; i < sorted.length; i++) {
@@ -126,9 +104,6 @@ class UnitTests {
 		start = System.nanoTime();
 		InsertionSort.Sort(backwards);
 		long backwardsTime = System.nanoTime() - start;
-		
-		System.out.println(backwardsTime);
-		System.out.println(sortedTime);
 		
 		assert(backwardsTime > sortedTime);
 	}
