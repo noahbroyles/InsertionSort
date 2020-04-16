@@ -3,6 +3,8 @@
  * Email: broylend@mail.uc.edu
  * Course: Computer Programming 2, Spring 2020
  * Assignment #: 10
+ * References: https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-assertions-with-junit-5-api/
+ * 
  * Description: Run unit tests againts the Problem024 class provided.
  */
 
@@ -19,6 +21,7 @@ class UnitTests {
 	/***
 	 * Test that the sort sorts numbers(including negatives) properly
 	 */
+	@DisplayName("Sorts negatives")
 	void test01() {
 		
 		// Declare the test data
@@ -41,6 +44,7 @@ class UnitTests {
 	/***
 	 * Test that the sort properly sorts an exactly backwards array
 	 */
+	@DisplayName("Can sort backwards array")
 	void test02() {
 		
 		int test2Length = 100000;
@@ -63,6 +67,7 @@ class UnitTests {
 	/***
 	 * Test that the sort does not unsort a presorted array
 	 */
+	@DisplayName("Works on presorted array")
 	void test03() {
 		
 		int test3Length = 100000;
@@ -85,6 +90,7 @@ class UnitTests {
 	/***
 	 * Test if sorting an already sorted array takes less time than sorting a backwards one
 	 */
+	@DisplayName("Sorting sorted array is time efficient")
 	void test04() {
 		int[] sorted = new int[1000];
 		int[] backwards = new int[1000];
