@@ -90,7 +90,7 @@ class UnitTests {
 	/***
 	 * Test if sorting an already sorted array takes less time than sorting a backwards one
 	 */
-	@DisplayName("Sorting sorted array is time efficient")
+	@DisplayName("Sorting presorted array is time efficient")
 	void test04() {
 		int[] sorted = new int[1000];
 		int[] backwards = new int[1000];
@@ -111,7 +111,7 @@ class UnitTests {
 		InsertionSort.Sort(backwards);
 		long backwardsTime = System.nanoTime() - start;
 		
-		assert(backwardsTime > sortedTime);
+		assert(backwardsTime > sortedTime);x`x
 	}
 
 }
